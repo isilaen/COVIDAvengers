@@ -1,6 +1,7 @@
 package com.example.covidavengers;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class User {
     private String firstName;
@@ -8,7 +9,7 @@ public class User {
 
     private boolean preSurgery;
 
-    private ArrayList<Task> allTasks;
+    private HashMap<Integer, Task> allTasks;
 
     private ArrayList<Achievement> achievements;
 
@@ -44,5 +45,16 @@ public class User {
             }
         }
         return 0;
+    }
+
+    public void completeTask(int taskID) {
+        Task task = allTasks.get(taskID);
+        if (task != null) {
+            task.setCompleted();
+        }
+    }
+
+    public void addTask(Task task) {
+        allTasks.put(task.getID(), task);
     }
 }
