@@ -17,7 +17,7 @@ public class HomeFragment extends Fragment {
         TextView tv1 = (TextView)layout.findViewById(R.id.welcomeTextView);
         tv1.setText("Welcome, " + User.getInstance().getFirstName()+ ".");
 
-        ImageView healthMeter = (ImageView)layout.findViewById(R.id.achievement2Img);
+        ImageView healthMeter = (ImageView)layout.findViewById(R.id.imageView2);
         switch (User.getInstance().getSurgeryAch().getCurrLevel()) {
             case 1:
                 healthMeter.setImageResource(R.drawable.b1);
