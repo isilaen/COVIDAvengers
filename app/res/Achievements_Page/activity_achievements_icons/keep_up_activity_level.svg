@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="153" viewBox="0 0 128 153">
+  <defs>
+    <filter id="Ellipse_13" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_37" data-name="Group 37" transform="translate(481 -370)">
+    <g transform="matrix(1, 0, 0, 1, -481, 370)" filter="url(#Ellipse_13)">
+      <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="58" cy="58" r="58" transform="translate(6 3)" fill="#fff"/>
+    </g>
+    <path id="Icon_awesome-dumbbell" data-name="Icon awesome-dumbbell" d="M8.8,7.663H4.737a2.025,2.025,0,0,0-2.03,2.03v8.8H.677A.679.679,0,0,0,0,19.167v4.06a.679.679,0,0,0,.677.677h2.03v8.8a2.025,2.025,0,0,0,2.03,2.03H8.8a2.025,2.025,0,0,0,2.03-2.03V9.694A2.025,2.025,0,0,0,8.8,7.663ZM53.458,18.49h-2.03v-8.8a2.025,2.025,0,0,0-2.03-2.03h-4.06a2.025,2.025,0,0,0-2.03,2.03V32.7a2.025,2.025,0,0,0,2.03,2.03H49.4a2.025,2.025,0,0,0,2.03-2.03V23.9h2.03a.679.679,0,0,0,.677-.677v-4.06A.679.679,0,0,0,53.458,18.49ZM38.571,2.25h-4.06a2.025,2.025,0,0,0-2.03,2.03V18.49H21.654V4.28a2.025,2.025,0,0,0-2.03-2.03h-4.06a2.025,2.025,0,0,0-2.03,2.03V38.114a2.025,2.025,0,0,0,2.03,2.03h4.06a2.025,2.025,0,0,0,2.03-2.03V23.9H32.481v14.21a2.025,2.025,0,0,0,2.03,2.03h4.06a2.025,2.025,0,0,0,2.03-2.03V4.28A2.025,2.025,0,0,0,38.571,2.25Z" transform="translate(-445.179 407.326)" fill="#2d55db"/>
+    <text id="Keep_Up_Your_Activity_Level" data-name="Keep Up Your Activity Level" transform="translate(-481 506)" fill="#2d55db" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="11">Keep Up Your Activity Level</tspan></text>
+    <path id="Icon_ionic-ios-sad" data-name="Icon ionic-ios-sad" d="M12.655,3.375a9.28,9.28,0,1,0,9.28,9.28A9.279,9.279,0,0,0,12.655,3.375Zm-3.3,6.786a1.072,1.072,0,1,1-.982.982A1.073,1.073,0,0,1,9.358,10.161Zm-.031,6.777a.715.715,0,0,1-.656-1,4.343,4.343,0,0,1,7.969,0,.713.713,0,0,1-.656,1,32.154,32.154,0,0,0-3.261-.178C11,16.76,9.327,16.938,9.327,16.938Zm6.626-4.645a1.072,1.072,0,1,1,.982-.982A1.073,1.073,0,0,1,15.952,12.294Z" transform="translate(-403.569 435.411)" fill="#2d55db" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>
