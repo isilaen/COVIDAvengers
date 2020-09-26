@@ -28,4 +28,23 @@ public abstract class Achievement {
     public String getLevelName() {
         return "";
     }
+
+    public static String getHealthStatusDescription(int level) {
+        String desc = "";
+        switch (level) {
+            case 1:
+                desc = "Neutral";
+                break;
+            case 2:
+                desc = "Healthy";
+                break;
+            case 3:
+                desc = "Very Healthy";
+                break;
+            case 4:
+                desc = "Extremely Healthy";
+                break;
+        }
+        return desc;
+    }
 }
