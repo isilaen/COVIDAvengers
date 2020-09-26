@@ -47,4 +47,8 @@ public abstract class Achievement {
         }
         return desc;
     }
+
+    public void setLevel(int level) {
+        this.currLevel = level;
+    }
 }

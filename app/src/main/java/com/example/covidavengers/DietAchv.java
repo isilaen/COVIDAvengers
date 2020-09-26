@@ -3,6 +3,10 @@ package com.example.covidavengers;
 /* achievement for how many days in a row you've completed all your diet tasks */
 public class DietAchv extends Achievement {
 
+    public DietAchv() {
+        super();
+    }
+
     public String getLevelName() {
         String name = "";
         switch (this.getCurrLevel()) {

@@ -3,6 +3,9 @@ package com.example.covidavengers;
 public class SurgeryAchv extends Achievement {
     //the final level will be when they are fully "optimised for surgery"
 
+    public SurgeryAchv() {
+        super();
+    }
 
     public String getLevelName() {
         String name = "";
