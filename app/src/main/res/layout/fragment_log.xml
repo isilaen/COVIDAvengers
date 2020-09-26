@@ -54,7 +54,7 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/semi_transparent_button"
+                android:background="@drawable/rounded_menu"
                 android:fontFamily="@font/fonts"
                 android:padding="15dp"
                 android:text="All tasks"
@@ -68,7 +68,7 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/semi_transparent_button"
+                android:background="@drawable/rounded_menu"
                 android:fontFamily="@font/fonts"
                 android:padding="15dp"
                 android:text="Completed tasks"
@@ -199,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="18dp"
-                android:background="@drawable/semi_transparent_button"
+                android:background="@drawable/rounded_menu"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -249,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="18dp"
-                android:background="@drawable/semi_transparent_button"
+                android:background="@drawable/rounded_menu"
                 android:orientation="horizontal">
 
                 <ImageView

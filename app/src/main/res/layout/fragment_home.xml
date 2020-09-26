@@ -54,7 +54,7 @@
                 android:layout_gravity="center"
                 android:src="@drawable/ic_workout_picture"
                 android:scaleType="fitCenter"
-                android:background="@drawable/semi_transparent_button"/>
+                android:background="@drawable/rounded_menu"/>
 
             <ImageButton
                 android:id="@+id/logImageBtn"
@@ -67,7 +67,7 @@
                 android:layout_gravity="center"
                 android:src="@drawable/ic_tasks_picture"
                 android:scaleType="fitCenter"
-                android:background="@drawable/semi_transparent_button"/>
+                android:background="@drawable/rounded_menu"/>
 
         </LinearLayout>
 
