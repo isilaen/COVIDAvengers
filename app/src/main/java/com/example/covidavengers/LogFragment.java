@@ -54,18 +54,18 @@ public class LogFragment extends Fragment {
 //        });
 
 
-        mapBtn = layout.findViewById(R.id.mapBtn);
-        mapBtn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-
-            Intent intent = new Intent(getActivity(), MapsActivity.class);
-            startActivity(intent);
-
-            }
-
-        });
+//        mapBtn = layout.findViewById(R.id.mapBtn);
+//        mapBtn.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//
+//            Intent intent = new Intent(getActivity(), MapsActivity.class);
+//            startActivity(intent);
+//
+//            }
+//
+//        });
 
         return layout;
     }
