@@ -1,9 +1,11 @@
 package com.example.covidavengers;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -15,6 +17,7 @@ public class HomeFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_home, container, false);
         TextView tv1 = (TextView)layout.findViewById(R.id.welcomeTextView);
         tv1.setText("Welcome, " + User.getInstance().getFirstName()+ ".");
+
         return layout;
     }
 }

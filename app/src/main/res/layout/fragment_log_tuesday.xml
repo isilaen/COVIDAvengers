@@ -196,10 +196,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/mondayTasks"
+                android:id="@+id/tuesdayTasks"
                 android:orientation="vertical">
 
-                <include layout="@layout/monday_log" />
+                <include layout="@layout/tuesday_log" />
 
             </LinearLayout>
 

@@ -1,0 +1,53 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/mondayTask1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mondayDoctor1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/blue_circle" />
+
+        <LinearLayout
+            android:id="@+id/mondayMessageDetails1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mondaySender1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/fonts"
+                android:text="From Doctor Hyde"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mondayMessage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts"
+                android:text="Complete your Deep Breathing exercises."
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</merge>

@@ -199,7 +199,7 @@
                 android:id="@+id/mondayTasks"
                 android:orientation="vertical">
 
-                <include layout="@layout/monday_log" />
+                <include layout="@layout/monday_completed_log" />
 
             </LinearLayout>
 
