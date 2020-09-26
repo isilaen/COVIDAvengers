@@ -12,11 +12,6 @@
         android:icon="@drawable/ic_notifications" />
 
     <item
-        android:id="@+id/achievements"
-        android:title="Achievements"
-        android:icon="@drawable/ic_star" />
-
-    <item
         android:id="@+id/log"
         android:title="Log"
         android:icon="@drawable/ic_log" />

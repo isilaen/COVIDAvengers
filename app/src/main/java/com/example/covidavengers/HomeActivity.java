@@ -2,6 +2,7 @@ package com.example.covidavengers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -32,22 +33,29 @@ public class HomeActivity extends AppCompatActivity {
 
 
         bottomNavigationView = findViewById(R.id.bottomNav);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selectedFragment = null;
                 switch (item.getItemId()) {
                     case R.id.home:
-
+                        selectedFragment = new HomeFragment();
                         break;
                     case R.id.notifications:
-                        break;
-                    case R.id.achievements:
+                        selectedFragment = new NotificationsFragment();
                         break;
                     case R.id.log:
+                        selectedFragment = new LogFragment();
                         break;
                     case R.id.profile:
+                        selectedFragment = new ProfileFragment();
                         break;
                 }
+                if(selectedFragment != null) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, selectedFragment).commit();
+                }
+
                 return true;
             }
         });
