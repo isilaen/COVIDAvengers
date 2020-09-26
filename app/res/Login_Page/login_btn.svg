@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="24" viewBox="0 0 167 24">
-  <defs>
-    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 181 26">
-      <image width="181" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAAaCAYAAADxGR2SAAAABHNCSVQICAgIfAhkiAAAA5dJREFUeF7tnM1LVUEYh5+3TwUjMjSLwqDIjCj6gNQigopqVRHUv9AuN9HaXYsWuelfaFGRixYZVFiUbaIPJDOStKI0yT4slb4m3iOjx+u999jtHPTe+57dcc75zby/eRzemTtzhIjLObcWOA7sA1YBVUBZ1HtWbg7E5MA34D3QC7QC10TkeTZtyVTonKsBzgMHY2qcyZgDcTlwHWgUka50glOgds6VA03ASWBeXK0wHXMgZgd+AReUVREZDGtPgto5txK4COyKuQEmZw4k5UAbcEJE+n0F41A750qAW0B9UrWbrjmQkAP3dM4nIqOqH4b6MnAsoUpN1hxI2oFLIqILGmNQO+eOAFeTrtX0zYGEHTgqIi0e6sfA5oQrNPkMDnT2vmFw6Bvli8qordZVU7tydOCRiGwV51wd0J6jSFG89uBZF7///AmAU/DivgzqWB2tV6jPAmdilS0wsaShLjC7ZjqcJoVaF7IPzHRLZnP9BvVs7p0pbWtVqC2fjuizKKh9+uBlShbMZ9s63V0wdr0d+Ehv/4fx+7lz5gTpzKLSUjatWU1q+uHvtXxoZGT8varyJaxZobsU7MriwBOF+jOw2GzK7EA2qJ929wTgeeB0wqdQKrh1G2qCCWD4XmvxelFQew19515HZ9DAnRtrrauyO/BFodYF64Xm1L9DnQ5YVfGgVy+rZGh4OAA7PMp2v+ujb/BT5EgdXg15+OIloz9+JjZZLaD+D6DuAaoLKKjYQ8k0UnuoU9ON8Oj9fWQ0GMkV8JUVS4O2/Q/UYZ3YAy0MwS6F+gGwozDiSSaKKKjDaULqSD34dWhSeqLl4Zw5W06dbqQ2qCP7uE2h1u2lpyIfLeIHcsmp/ejtJ4np8uOonNqgzgm6ZvvxZRq+eahTH/WTNp9u+PLUdMSnG77cr2p4aDOtfhjU0+icqY9s8T+T37XtpjkZmNNLHmJbosvJvmwv3ReRnR7qPcDt2KswwWDl49X7vvF160wrJmZVLA40iEh7eOup5dax+DpZxEMc/mtqepJAtcUo2SwijRp4GGo9unUT2F2MjljMee3AHWCviOgRrwmo9cY5VwF0AJV5HaI1vpgceA1sF5EBH3S6g7elwBXgUDE5Y7HmpQP6yQQ9GDCxQSZ1pPZhOecU9sPAaaAhL8O1RheyA/eBc0CLiLjUQDN+9yME+Hr9bwD2A3rafLl9zKaQeZl1sYU/ZnNDjx2KyMtsrfwLPuL7hInyhEgAAAAASUVORK5CYII="/>
-    </pattern>
-  </defs>
-  <rect id="Group_7" data-name="Group 7" width="167" height="24" fill="url(#pattern)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="26" viewBox="0 0 181 26">
+  <g id="Group_7" data-name="Group 7" transform="translate(-115 -488)">
+    <g id="Group_6" data-name="Group 6" transform="translate(65 157)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="181" height="26" rx="13" transform="translate(50 331)" fill="#2d55db"/>
+    </g>
+    <text id="Login" transform="translate(187 506)" fill="#fdfdfd" font-size="14" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">Login</tspan></text>
+  </g>
 </svg>
