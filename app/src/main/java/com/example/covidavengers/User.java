@@ -16,6 +16,9 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         achievements = new ArrayList<Achievement>();
+        achievements.add(new SurgeryAchv());
+        achievements.add(new DietAchv());
+        achievements.add(new ActiveAchv());
     }
 
     public String getFirstName() {
@@ -30,5 +33,16 @@ public class User {
 
     public boolean isPreSurgery() {
         return preSurgery;
+    }
+
+    //your health status is an integer 1 to 4 (4 is very healthy)
+    public int getHealthStatus() {
+        for (int i = 0; i < achievements.size(); i++) {
+            Achievement thisAchv = achievements.get(i);
+            if (thisAchv instanceof SurgeryAchv) {
+                return thisAchv.getCurrLevel();
+            }
+        }
+        return 0;
     }
 }
