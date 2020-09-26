@@ -45,7 +45,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/fonts"
-                        android:textSize="30sp"
+                        android:textSize="29sp"
                         android:textFontWeight="700"
                         android:text="Patient Name"
                         android:layout_marginBottom="5dp"
@@ -82,7 +82,7 @@
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:layout_marginLeft="32dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="28dp"
                 android:background="@drawable/semi_transparent_button">
 
                 <TextView
@@ -115,8 +115,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
                 android:background="@drawable/semi_transparent_button">
 
                 <TextView
@@ -149,8 +149,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
                 android:background="@drawable/semi_transparent_button">
 
                 <TextView
@@ -160,7 +160,7 @@
                     android:fontFamily="@font/fonts"
                     android:textSize="12sp"
                     android:textFontWeight="700"
-                    android:text="WEIGHT"
+                    android:text="PRESSURE"
                     android:layout_gravity="center"
                     android:textColor="@color/colorPrimaryDark"/>
 
@@ -168,12 +168,12 @@
                     android:id="@+id/pressureValueTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/fonts"
-                    android:textSize="22sp"
-                    android:textFontWeight="700"
-                    android:text="70"
                     android:layout_gravity="center"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:fontFamily="@font/fonts"
+                    android:text="70"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textFontWeight="700"
+                    android:textSize="22sp" />
 
             </LinearLayout>
 
