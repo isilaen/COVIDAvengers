@@ -1,7 +1,7 @@
 package com.example.covidavengers;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class User {
     private String firstName;
@@ -9,7 +9,7 @@ public class User {
 
     private boolean preSurgery;
 
-    private HashMap<Integer, Task> allTasks;
+    private ArrayList<Task> allTasks;
 
     private ArrayList<Achievement> achievements;
 
@@ -48,13 +48,52 @@ public class User {
     }
 
     public void completeTask(int taskID) {
-        Task task = allTasks.get(taskID);
-        if (task != null) {
-            task.setCompleted();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            int id = thisTask.getID();
+            if (id == taskID) {
+                thisTask.setCompleted();
+            }
         }
     }
 
     public void addTask(Task task) {
-        allTasks.put(task.getID(), task);
+        allTasks.add(task);
+    }
+
+    //returns completed tasks
+    public ArrayList<Task> getCompletedTasks() {
+        ArrayList<Task> completed = new ArrayList<Task>();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            if (thisTask.isCompleted()) {
+                completed.add(thisTask);
+            }
+        }
+        return completed;
+    }
+
+    //returns incomplete tasks
+    public ArrayList<Task> getCurrentTasks() {
+        ArrayList<Task> current = new ArrayList<Task>();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            if (!thisTask.isCompleted()) {
+                current.add(thisTask);
+            }
+        }
+        return current;
+    }
+
+    public ArrayList<Task> getTodaysTasks() {
+        LocalDate today = LocalDate.now();
+        ArrayList<Task> todaysTasks = new ArrayList<Task>();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            if (thisTask.getDay().equals(today)) {
+                todaysTasks.add(thisTask);
+            }
+        }
+        return todaysTasks;
     }
 }
