@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/welcomeTextView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Welcome, patient"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/healthMeter"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <LinearLayout
+        android:id="@+id/homeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="48dp"
+        android:paddingTop="48dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-<!--    <TextView-->
-<!--        android:id="@+id/healthMeter"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Health meter here"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:layout_editor_absoluteY="163dp" />-->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, patient" />
+
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -31,13 +33,18 @@
         android:id="@+id/container"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_width="360dp"
+        android:padding="10dp"
         android:layout_height="wrap_content"
         android:id="@+id/bottomNav"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@android:color/white"
-        app:itemTextColor="@android:color/white"
+        android:background="@drawable/rounded_menu"
+        app:itemIconTint="@color/colorPrimaryLight"
+        app:itemTextColor="@color/colorPrimaryLight"
+        app:itemIconSize="20dp"
+        app:labelVisibilityMode="unlabeled"
         app:menu="@menu/menu"/>
 
 

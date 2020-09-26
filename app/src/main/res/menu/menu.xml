@@ -23,6 +23,7 @@
 
     <item
         android:id="@+id/profile"
+        android:background="@drawable/blue_circle"
         android:title="Profile"
         android:icon="@drawable/ic_profile" />
 
