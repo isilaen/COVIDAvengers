@@ -18,12 +18,12 @@
             android:id="@+id/welcomeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/fonts"
-            android:textSize="30sp"
-            android:textFontWeight="700"
-            android:text="Welcome, patient"
             android:layout_marginBottom="18dp"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:fontFamily="@font/fonts"
+            android:text="Welcome, patient"
+            android:textColor="@color/colorPrimaryDark"
+            android:textFontWeight="700"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/healthMeter"

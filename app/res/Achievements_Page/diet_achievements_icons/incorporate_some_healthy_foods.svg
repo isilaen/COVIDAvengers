@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="152" viewBox="0 0 150 152">
+  <defs>
+    <filter id="Ellipse_19" x="12" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_33" data-name="Group 33" transform="translate(495 -180)">
+    <g transform="matrix(1, 0, 0, 1, -495, 180)" filter="url(#Ellipse_19)">
+      <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="58" cy="58" r="58" transform="translate(18 3)" fill="#fff"/>
+    </g>
+    <path id="Icon_awesome-apple-alt" data-name="Icon awesome-apple-alt" d="M35.586,13.086a9.937,9.937,0,0,1,6.483,4.261,19.014,19.014,0,0,1,3.039,7.913,25.234,25.234,0,0,1-.1,8.724,27.415,27.415,0,0,1-4.862,12.072Q35.787,51.941,29.2,51.94a7.691,7.691,0,0,1-3.546-1.014,5.725,5.725,0,0,0-5.877,0,7.691,7.691,0,0,1-3.546,1.014q-6.585,0-10.941-5.884A27.415,27.415,0,0,1,.431,33.984a25.234,25.234,0,0,1-.1-8.724,19.014,19.014,0,0,1,3.039-7.913,9.937,9.937,0,0,1,6.483-4.261,16.921,16.921,0,0,1,6.686.71,28.082,28.082,0,0,1,6.18,2.435A28.082,28.082,0,0,1,28.9,13.8a16.932,16.932,0,0,1,6.688-.71ZM30.014,8.927a8.575,8.575,0,0,1-3.749,1.927,11.834,11.834,0,0,1-3.546.507l-1.519-.1a13.02,13.02,0,0,1,0-3.246,9.051,9.051,0,0,1,2.33-5.579A8.575,8.575,0,0,1,27.278.507,11.834,11.834,0,0,1,30.824,0l1.519.1.1,1.522a11.9,11.9,0,0,1-.506,3.551,8.576,8.576,0,0,1-1.925,3.753Z" transform="translate(-442.709 211.294)" fill="#2d55db"/>
+    <text id="Incorporate_some_Healthy_Foods" data-name="Incorporate some Healthy Foods" transform="translate(-495 316)" fill="#2d55db" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="11">Incorporate some Healthy Foods</tspan></text>
+    <path id="Icon_ionic-ios-sad" data-name="Icon ionic-ios-sad" d="M13.084,3.375a9.709,9.709,0,1,0,9.709,9.709A9.707,9.707,0,0,0,13.084,3.375Zm-3.449,7.1A1.122,1.122,0,1,1,8.607,11.5,1.123,1.123,0,0,1,9.634,10.474ZM9.6,17.564a.748.748,0,0,1-.686-1.046,4.544,4.544,0,0,1,8.336,0,.746.746,0,0,1-.686,1.046,33.637,33.637,0,0,0-3.412-.187C11.357,17.378,9.6,17.564,9.6,17.564Zm6.931-4.859a1.122,1.122,0,1,1,1.027-1.027A1.123,1.123,0,0,1,16.533,12.706Z" transform="translate(-413.967 250.826)" fill="#2d55db"/>
+  </g>
+</svg>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
@@ -53,6 +54,11 @@ public class LogFragment extends Fragment {
 //
 //        });
 
+        ImageView doctor1 = (ImageView)layout.findViewById(R.id.mondayDoctor1);
+        doctor1.setImageResource(R.drawable.doctorman);
+
+        ImageView doctor2 = (ImageView)layout.findViewById(R.id.mondayDoctor2);
+        doctor2.setImageResource(R.drawable.doctorold);
 
 //        mapBtn = layout.findViewById(R.id.mapBtn);
 //        mapBtn.setOnClickListener(new View.OnClickListener() {
