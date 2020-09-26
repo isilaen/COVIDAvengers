@@ -46,7 +46,7 @@
                     android:textSize="16sp"
                     android:layout_marginBottom="2dp"
                     android:textFontWeight="700"
-                    android:text="From Doctor Blah"
+                    android:text="From Doctor Jekyll"
                     android:textColor="@color/colorPrimaryDark"/>
 
                 <TextView
@@ -56,7 +56,7 @@
                     android:fontFamily="@font/fonts"
                     android:textSize="14sp"
                     android:textFontWeight="400"
-                    android:text="Hi Mr Smith, your surgery went well, no complication, please let your nurse know if you have any concerns I will come and see you later tomorrow."
+                    android:text="Hi Ms Crawford, your surgery went well, no complications, please let your nurse know if you have any concerns I will come and see you later tomorrow."
                     android:layout_marginBottom="5dp"
                     android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimaryDark"/>
@@ -98,7 +98,7 @@
                     android:textSize="16sp"
                     android:layout_marginBottom="2dp"
                     android:textFontWeight="700"
-                    android:text="From Doctor Blah"
+                    android:text="From Doctor Hyde"
                     android:textColor="@color/colorPrimaryDark"/>
 
                 <TextView
@@ -108,7 +108,7 @@
                     android:fontFamily="@font/fonts"
                     android:textSize="14sp"
                     android:textFontWeight="400"
-                    android:text="Hi Mr Smith, your surgery went well, no complication, please let your nurse know if you have any concerns I will come and see you later tomorrow."
+                    android:text="Hi Ms Crawford, remember to complete your Deep Breathing exercises today!"
                     android:layout_marginBottom="5dp"
                     android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimaryDark"/>
