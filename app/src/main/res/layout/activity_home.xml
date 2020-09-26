@@ -11,8 +11,8 @@
         android:id="@+id/homeMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="48dp"
-        android:paddingTop="48dp"
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:layout_gravity="center"
@@ -26,7 +26,7 @@
             android:textSize="30sp"
             android:textFontWeight="700"
             android:text="Welcome, patient"
-            android:layout_marginBottom="22dp"/>
+            android:layout_marginBottom="18dp"/>
 
         <TextView
             android:id="@+id/healthMeter"
@@ -36,7 +36,7 @@
             android:textSize="22sp"
             android:textFontWeight="500"
             android:text="Health meter here"
-            android:layout_marginBottom="22dp" />
+            android:layout_marginBottom="18dp" />
 
         <LinearLayout
             android:id="@+id/homeMainRow1"
@@ -46,13 +46,30 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/searchImageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/exerciseImageBtn"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/blue_circle"
-                android:background="@null"/>
+                android:layout_gravity="center"
+                android:src="@drawable/ic_workout_picture"
+                android:scaleType="fitCenter"
+                android:background="@drawable/semi_transparent_button"/>
+
+            <ImageButton
+                android:id="@+id/logImageBtn"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_tasks_picture"
+                android:scaleType="fitCenter"
+                android:background="@drawable/semi_transparent_button"/>
 
         </LinearLayout>
 
