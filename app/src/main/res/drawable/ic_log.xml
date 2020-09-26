@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="512"
+    android:viewportHeight="512"
+    android:width="640dp"
+    android:height="640dp">
+    <group
+        android:translateX="76"
+        android:translateY="-0">
+        <path
+            android:pathData="M340 198h-221c-43.5625 0 -79 -35.4375 -79 -79s35.4375 -79 79 -79h221c11.046875 0 20 -8.953125 20 -20s-8.953125 -20 -20 -20h-221c-65.617188 0 -119 53.382812 -119 119v274c0 65.617188 53.382812 119 119 119h221c11.046875 0 20 -8.953125 20 -20v-274c0 -11.046875 -8.953125 -20 -20 -20zm-20 274h-201c-43.5625 0 -79 -35.4375 -79 -79v-185.078125c21.027344 18.703125 48.710938 30.078125 79 30.078125h201zm40 -353c0 11.046875 -8.953125 20 -20 20h-244c-11.046875 0 -20 -8.953125 -20 -20s8.953125 -20 20 -20h244c11.046875 0 20 8.953125 20 20zm0 0"
+            android:fillColor="@color/colorBlueLight" />
+    </group>
+</vector>
