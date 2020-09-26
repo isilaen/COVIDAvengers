@@ -18,24 +18,31 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/iPrehab"
+        <LinearLayout
+            android:id="@+id/titleContainer"
             android:layout_width="match_parent"
-            android:layout_height="108dp"
-            android:fontFamily="@font/fonts"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="18sp"
-            android:text="iPrehab"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textFontWeight="700"
-            android:textSize="36sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iPrehab"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:fontFamily="@font/fonts"
+                android:gravity="center"
+                android:lineSpacingExtra="18sp"
+                android:text="iPrehab"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="36sp" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="292dp"
-            android:layout_margin="0"
+            android:layout_margin="0dp"
             app:srcCompat="@drawable/doctor_img" />
 
         <LinearLayout
@@ -51,6 +58,7 @@
                 android:id="@+id/userLogo"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/user_icon" />
 
             <EditText
@@ -78,6 +86,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_weight="1"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/password_icon" />
 
             <EditText
@@ -93,6 +102,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="168dp"
             android:layout_height="25dp"
             android:layout_marginTop="20dp"
