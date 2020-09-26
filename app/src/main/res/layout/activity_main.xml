@@ -63,13 +63,13 @@
 
             <EditText
                 android:id="@+id/userNameEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginTop="24dp"
-                android:contentDescription="username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/fonts"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:text="" />
 
         </LinearLayout>
 
@@ -91,13 +91,13 @@
 
             <EditText
                 android:id="@+id/passwordEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginTop="24dp"
-                android:contentDescription="password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/fonts"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:textAlignment="center" />
+                android:text="" />
 
         </LinearLayout>
 
