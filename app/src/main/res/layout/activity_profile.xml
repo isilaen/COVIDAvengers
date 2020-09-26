@@ -6,26 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <ImageView
+        android:id="@+id/fragmentBackground"
         android:layout_width="409dp"
-        android:layout_height="550dp"
+        android:layout_height="485dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="19dp"
         android:layout_marginEnd="1dp"
         android:background="#E9ECF1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/achievement4Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="635dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/achievement5Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="635dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/achievement6Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="635dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/achievement3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -114,6 +152,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/achievement1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/achievement2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/fonts"
+        android:text="Weight"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/ageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -147,6 +209,78 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:src="@drawable/AchievementIcon"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/incomplete"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/incomplete"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_3"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/incomplete"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_4"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="520dp"
+        android:src="@drawable/incomplete"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_5"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="520dp"
+        android:src="@drawable/incomplete"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement_6"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="520dp"
+        android:src="@drawable/incomplete"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
