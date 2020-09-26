@@ -4,10 +4,16 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class User {
+    //singleton
+    private static User instance;
+
+    private static final String SAMPLE_FIRST_NAME = "Joan";
+    private static final String SAMPLE_LAST_NAME = "Crawford";
+
     private String firstName;
     private String lastName;
 
-    //how many days theyve been active/followed the nutrition
+    //how many days they've been active/followed the nutrition stuff
     private int dietStreak;
     private int activeStreak;
 
@@ -15,7 +21,7 @@ public class User {
 
     private ArrayList<Task> allTasks;
 
-    //private ArrayList<Achievement> achievements;
+    private LocalDate currDay;
 
     Achievement sAch;
     Achievement aAch;
@@ -29,6 +35,7 @@ public class User {
         dAch = new DietAchv();
         dietStreak = 0;
         activeStreak = 0;
+        currDay = LocalDate.now();
     }
 
     public String getFirstName() {
@@ -56,20 +63,8 @@ public class User {
             int id = thisTask.getID();
             if (id == taskID) {
                 thisTask.setCompleted();
-                //now check if every task for the day is done
-                if ((thisTask != null) && (thisTask instanceof ActiveTask) && allActiveCompletedToday()) {
-                    activeStreak++;
-                    if (activeStreak % 3 == 0) {
-                        aAch.incrementLevel();
-                    }
-                }
-                if ((thisTask != null) && (thisTask instanceof DietTask) && allDietCompletedToday()) {
-                    dietStreak++;
-                    if (dietStreak % 3 == 0) {
-                        dAch.incrementLevel();
-                    }
-                }
-                sAch.setLevel((aAch.getCurrLevel() + dAch.getCurrLevel())/2);
+
+                updateStreaks();
                 return;
             }
         }
@@ -138,5 +133,37 @@ public class User {
             }
         }
         return true;
+    }
+
+    private void updateStreaks() {
+        LocalDate today = LocalDate.now();
+        if (today.isAfter(currDay)) {
+            //it's a new day
+            if (allActiveCompletedToday()) {
+                activeStreak++;
+                if ((activeStreak % 3 == 0) && (activeStreak != 0)) {
+                    aAch.incrementLevel();
+                }
+            } else {
+                activeStreak = 0;
+            }
+            if (allDietCompletedToday()) {
+                dietStreak++;
+                if ((dietStreak % 3 == 0) && (dietStreak != 0)) {
+                    dAch.incrementLevel();
+                }
+            } else {
+                dietStreak = 0;
+            }
+            sAch.setLevel((aAch.getCurrLevel() + dAch.getCurrLevel())/2);
+            currDay = today;
+        }
+    }
+
+    public static User getInstance() {
+        if (instance == null) {
+            instance = new User(SAMPLE_FIRST_NAME, SAMPLE_FIRST_NAME);
+        }
+        return instance;
     }
 }
