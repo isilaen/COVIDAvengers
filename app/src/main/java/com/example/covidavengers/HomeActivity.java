@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,6 +32,12 @@ public class HomeActivity extends AppCompatActivity {
         String patientName = intent.getStringExtra(PATIENT_NAME);
 
         /* Do something. */
+
+        RelativeLayout relativeLayout = findViewById(R.id.homeLayout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) relativeLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(5000);
+        animationDrawable.setExitFadeDuration(10000);
+        animationDrawable.start();
 
 
         bottomNavigationView = findViewById(R.id.bottomNav);
