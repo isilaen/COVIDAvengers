@@ -9,9 +9,19 @@ public class User {
 
     private static final String SAMPLE_FIRST_NAME = "Joan";
     private static final String SAMPLE_LAST_NAME = "Crawford";
+    private static final int SAMPLE_AGE = 68;
+    private static final int SAMPLE_WEIGHT = 70;
+    private static final int SAMPLE_GLUCOSE = 70;
+    private static final int SAMPLE_BLOOD_PRESSURE = 70;
 
     private String firstName;
     private String lastName;
+
+    private int age;
+
+    private int weight;
+    private int glucose;
+    private int bloodPressure;
 
     //how many days they've been active/followed the nutrition stuff
     private int dietStreak;
@@ -27,9 +37,15 @@ public class User {
     Achievement aAch;
     Achievement dAch;
 
-    public User(String firstName, String lastName) {
+    public User(String firstName, String lastName, int age, int weight,
+                int glucose, int bloodPressure) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
+        this.weight = weight;
+        this.glucose = glucose;
+        this.bloodPressure = bloodPressure;
+
         sAch = new SurgeryAchv();
         aAch = new ActiveAchv();
         dAch = new DietAchv();
@@ -46,6 +62,18 @@ public class User {
     }
     public String getName() {
         return (firstName + " " + lastName);
+    }
+    public int getAge() {
+        return age;
+    }
+    public int getWeight() {
+        return weight;
+    }
+    public int getGlucose() {
+        return glucose;
+    }
+    public int getBloodPressure() {
+        return bloodPressure;
     }
 
     public boolean isPreSurgery() {
@@ -162,7 +190,8 @@ public class User {
 
     public static User getInstance() {
         if (instance == null) {
-            instance = new User(SAMPLE_FIRST_NAME, SAMPLE_FIRST_NAME);
+            instance = new User(SAMPLE_FIRST_NAME, SAMPLE_LAST_NAME, SAMPLE_AGE, SAMPLE_WEIGHT,
+                    SAMPLE_GLUCOSE, SAMPLE_BLOOD_PRESSURE);
         }
         return instance;
     }
