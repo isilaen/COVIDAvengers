@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -25,16 +27,11 @@
             android:textFontWeight="700"
             android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/healthMeter"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/fonts"
-            android:textSize="22sp"
-            android:textFontWeight="500"
-            android:text="Health meter here"
-            android:layout_marginBottom="18dp"
-            android:textColor="@color/colorPrimaryText"/>
+            app:srcCompat="@drawable/ic_login_btn" />
 
         <LinearLayout
             android:id="@+id/homeMainRow1"
@@ -47,27 +44,27 @@
                 android:id="@+id/exerciseImageBtn"
                 android:layout_width="165dp"
                 android:layout_height="165dp"
-                android:padding="12dp"
-                android:layout_margin="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_workout_picture"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_menu"
+                android:padding="12dp"
                 android:scaleType="fitCenter"
-                android:background="@drawable/rounded_menu"/>
+                android:src="@drawable/ic_workout_picture" />
 
             <ImageButton
                 android:id="@+id/logImageBtn"
                 android:layout_width="165dp"
                 android:layout_height="165dp"
-                android:padding="12dp"
-                android:layout_margin="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_tasks_picture"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_menu"
+                android:padding="12dp"
                 android:scaleType="fitCenter"
-                android:background="@drawable/rounded_menu"/>
+                android:src="@drawable/ic_tasks_picture" />
 
         </LinearLayout>
 
