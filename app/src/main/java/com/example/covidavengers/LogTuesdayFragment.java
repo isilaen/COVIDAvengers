@@ -30,6 +30,15 @@ public class LogTuesdayFragment extends Fragment {
 
         });
 
+        ImageView doctor1 = (ImageView)layout.findViewById(R.id.tuesdayDoctor1);
+        doctor1.setImageResource(R.drawable.doctorold);
+
+        ImageView doctor2 = (ImageView)layout.findViewById(R.id.tuesdayDoctor2);
+        doctor2.setImageResource(R.drawable.doctorold); // Doctor Mabuse
+
+        ImageView doctor3 = (ImageView)layout.findViewById(R.id.tuesdayDoctor3);
+        doctor3.setImageResource(R.drawable.doctorman); // Doctor Hyde
+
         return layout;
     }
 }

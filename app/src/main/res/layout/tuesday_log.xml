@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/fonts"
-                android:text="From Doctor Blah"
+                android:text="From Doctor Mabuse"
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="700"
                 android:textSize="16sp" />
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/fonts"
-                android:text="Do 5 sit-ups."
+                android:text="Practice mindfulness."
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="400"
                 android:textSize="14sp" />
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/fonts"
-                android:text="From Doctor Blah"
+                android:text="From Doctor Mabuse"
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="700"
                 android:textSize="16sp" />
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/fonts"
-                android:text="Do 5 push-ups."
+                android:text="Take a walk in the morning."
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="400"
                 android:textSize="14sp" />
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/fonts"
-                android:text="From Doctor Blah"
+                android:text="From Doctor Hyde"
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="700"
                 android:textSize="16sp" />
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/fonts"
-                android:text="Do 5 push-ups."
+                android:text="Remember to eat a serve of veggies!"
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="400"
                 android:textSize="14sp" />
