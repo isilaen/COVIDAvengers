@@ -42,9 +42,11 @@
         android:id="@+id/pressureText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="265dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="215dp"
+        android:fontFamily="@font/fonts"
         android:text="Pressure"
+        android:textFontWeight="500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,9 +54,11 @@
         android:id="@+id/glucouseText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="215dp"
+        android:fontFamily="@font/fonts"
         android:text="Glucose"
+        android:textFontWeight="500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,9 +66,12 @@
         android:id="@+id/weightValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/fonts"
         android:text="70"
+        android:textFontWeight="1000"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,9 +79,12 @@
         android:id="@+id/glucouseValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/fonts"
         android:text="70"
+        android:textFontWeight="1000"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,9 +92,12 @@
         android:id="@+id/pressureValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/fonts"
         android:text="70"
+        android:textFontWeight="1000"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,9 +105,11 @@
         android:id="@+id/weightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="215dp"
+        android:fontFamily="@font/fonts"
         android:text="Weight"
+        android:textFontWeight="500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,7 +118,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/fonts"
         android:text="Age"
+        android:textFontWeight="500"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
@@ -114,7 +132,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="75dp"
+        android:fontFamily="@font/fonts"
         android:text="Display Name"
+        android:textFontWeight="700"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
