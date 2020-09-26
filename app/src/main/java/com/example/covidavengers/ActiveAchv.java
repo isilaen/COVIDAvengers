@@ -2,6 +2,11 @@ package com.example.covidavengers;
 
 /* achievement for how many days in a row you've completed all your exercise */
 public class ActiveAchv extends Achievement {
+
+    public ActiveAchv() {
+        super();
+    }
+
     public String getLevelName() {
         String name = "";
         switch (this.getCurrLevel()) {
