@@ -7,12 +7,12 @@ public class User {
     //singleton
     private static User instance;
 
-    private static final String SAMPLE_FIRST_NAME = "Joan";
+    private static final String SAMPLE_FIRST_NAME = "Jenny";
     private static final String SAMPLE_LAST_NAME = "Crawford";
-    private static final int SAMPLE_AGE = 68;
+    private static final int SAMPLE_AGE = 65;
     private static final int SAMPLE_WEIGHT = 70;
-    private static final int SAMPLE_GLUCOSE = 70;
-    private static final int SAMPLE_BLOOD_PRESSURE = 70;
+    private static final int SAMPLE_GLUCOSE = 75;
+    private static final int SAMPLE_BLOOD_PRESSURE = 82;
 
     private String firstName;
     private String lastName;
@@ -194,5 +194,15 @@ public class User {
                     SAMPLE_GLUCOSE, SAMPLE_BLOOD_PRESSURE);
         }
         return instance;
+    }
+
+    public Achievement getSurgeryAch() {
+        return sAch;
+    }
+    public Achievement getActiveAch() {
+        return aAch;
+    }
+    public Achievement getDietAch() {
+        return dAch;
     }
 }
