@@ -7,19 +7,28 @@ public class User {
     private String firstName;
     private String lastName;
 
+    //how many days theyve been active/followed the nutrition
+    private int dietStreak;
+    private int activeStreak;
+
     private boolean preSurgery;
 
     private ArrayList<Task> allTasks;
 
-    private ArrayList<Achievement> achievements;
+    //private ArrayList<Achievement> achievements;
+
+    Achievement sAch;
+    Achievement aAch;
+    Achievement dAch;
 
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        achievements = new ArrayList<Achievement>();
-        achievements.add(new SurgeryAchv());
-        achievements.add(new DietAchv());
-        achievements.add(new ActiveAchv());
+        sAch = new SurgeryAchv();
+        aAch = new ActiveAchv();
+        dAch = new DietAchv();
+        dietStreak = 0;
+        activeStreak = 0;
     }
 
     public String getFirstName() {
@@ -38,13 +47,7 @@ public class User {
 
     //your health status is an integer 1 to 4 (4 is very healthy)
     public int getHealthStatus() {
-        for (int i = 0; i < achievements.size(); i++) {
-            Achievement thisAchv = achievements.get(i);
-            if (thisAchv instanceof SurgeryAchv) {
-                return thisAchv.getCurrLevel();
-            }
-        }
-        return 0;
+        return sAch.getCurrLevel();
     }
 
     public void completeTask(int taskID) {
@@ -53,8 +56,24 @@ public class User {
             int id = thisTask.getID();
             if (id == taskID) {
                 thisTask.setCompleted();
+                //now check if every task for the day is done
+                if ((thisTask != null) && (thisTask instanceof ActiveTask) && allActiveCompletedToday()) {
+                    activeStreak++;
+                    if (activeStreak % 3 == 0) {
+                        aAch.incrementLevel();
+                    }
+                }
+                if ((thisTask != null) && (thisTask instanceof DietTask) && allDietCompletedToday()) {
+                    dietStreak++;
+                    if (dietStreak % 3 == 0) {
+                        dAch.incrementLevel();
+                    }
+                }
+                sAch.setLevel((aAch.getCurrLevel() + dAch.getCurrLevel())/2);
+                return;
             }
         }
+
     }
 
     public void addTask(Task task) {
@@ -95,5 +114,29 @@ public class User {
             }
         }
         return todaysTasks;
+    }
+
+    //checks if a user has completed all their active tasks for today
+    private boolean allActiveCompletedToday() {
+        LocalDate today = LocalDate.now();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            if ((!thisTask.isCompleted()) && (thisTask.getDay().equals(today)) && (thisTask instanceof ActiveTask)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //checks if a user has completed all their diet tasks for today
+    private boolean allDietCompletedToday() {
+        LocalDate today = LocalDate.now();
+        for (int i = 0; i < allTasks.size(); i++) {
+            Task thisTask = allTasks.get(i);
+            if ((!thisTask.isCompleted()) && (thisTask.getDay().equals(today)) && (thisTask instanceof DietTask)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
