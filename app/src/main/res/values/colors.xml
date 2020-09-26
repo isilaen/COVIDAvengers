@@ -10,4 +10,6 @@
     <color name="colorDarkGrey">#252525</color>
     <color name="colorLightGrey">#DBE1E5</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGreyTransparent">#39F7F7F7</color>
+    <color name="colorOffWhite">#DDE2E6</color>
 </resources>

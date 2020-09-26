@@ -3,15 +3,298 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/welcomeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/fonts"
-        android:textSize="30sp"
-        android:textFontWeight="700"
-        android:text="Log"
-        android:layout_marginBottom="18dp"
-        android:textColor="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:id="@+id/logMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingTop="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:id="@+id/profileMainRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/semi_transparent_button"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts"
+                android:paddingRight="5dp"
+                android:text="My log"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fullLogBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_menu"
+                android:fontFamily="@font/fonts"
+                android:padding="15dp"
+                android:text="All tasks"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="800"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/completedBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_menu"
+                android:fontFamily="@font/fonts"
+                android:padding="15dp"
+                android:text="Completed tasks"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="800"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daysRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mondayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/blue_circle"
+                android:fontFamily="@font/fonts"
+                android:text="MON"
+                android:textColor="@color/colorWhite"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/tuesdayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="TEU"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/wednesdayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="WED"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/thursdayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="THU"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/fridayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="FRI"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/saturdayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="SAT"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/sundayBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_circle"
+                android:fontFamily="@font/fonts"
+                android:text="SUN"
+                android:textColor="@color/colorPrimaryDark"
+                android:textFontWeight="700"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/semi_transparent_button"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/task1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/rounded_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/doctor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/blue_circle" />
+
+                <LinearLayout
+                    android:id="@+id/messageDetails1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sender1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="From Doctor Blah"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textFontWeight="700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/message1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts"
+                        android:text="Do 5 sit-ups."
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/rounded_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/doctor2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/blue_circle" />
+
+                <LinearLayout
+                    android:id="@+id/messageDetails2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sender2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="From Doctor Blah"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textFontWeight="700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/message2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts"
+                        android:text="Do 5 push-ups."
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
